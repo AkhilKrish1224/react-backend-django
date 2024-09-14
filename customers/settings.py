@@ -27,6 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "192.168.1.37"]
 
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'ROTATE_REFRESH_TOKENS': True,
+}
+
 
 
 
